@@ -57,3 +57,19 @@ git add <resolved-file>
 git commit
 ```
 
+## Quick Command Reference
+
+| Task | Command |
+| --- | --- |
+| Initialize a repository | `git init` |
+| Clone a repository | `git clone <url>` |
+| Check status | `git status` |
+| Stage changes | `git add <file>` / `git add .` |
+| Commit staged changes | `git commit -m "<message>"` |
+| Create & switch branch | `git switch -c <branch>` |
+| Fetch & merge remote updates | `git pull` |
+| Push branch to remote | `git push -u origin <branch>` |
+| Stash uncommitted work | `git stash` / `git stash pop` |
+| View compact history | `git log --oneline` |
+
+
