@@ -40,3 +40,20 @@ git switch -c <branch-name>
 ### 8. How do I undo uncommitted changes or save them temporarily?
 - To temporarily save uncommitted changes without committing them, run `git stash` (and `git stash pop` to restore them later).
 - To discard unstaged changes in a file, run `git restore <file>`.
+
+### 9. How do I copy an existing remote repository to my machine?
+Use `git clone <repository-url>` to download the full repository and its commit history into a new local directory:
+```bash
+git clone https://github.com/<username>/<repo>.git
+```
+
+### 10. How do I resolve a merge conflict?
+When Git pauses a merge due to conflicting edits in the same lines:
+1. Open the conflicted file(s) and look for `<<<<<<<`, `=======`, and `>>>>>>>` markers.
+2. Edit the file to keep the desired code and remove all conflict markers.
+3. Stage the resolved file and complete the merge:
+```bash
+git add <resolved-file>
+git commit
+```
+
