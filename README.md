@@ -72,4 +72,12 @@ git commit
 | Stash uncommitted work | `git stash` / `git stash pop` |
 | View compact history | `git log --oneline` |
 
+## Best Practices
+
+- **Write clear commit messages:** Use concise, descriptive subjects so teammates can understand what changed and why.
+- **Keep commits focused:** Group related edits into small, logical commits rather than one large commit.
+- **Pull before pushing:** Run `git pull` regularly to stay up to date with `main` and minimize merge conflicts.
+- **Use branches for new work:** Create a separate branch per feature or fix instead of committing directly to `main`.
+
+
 
